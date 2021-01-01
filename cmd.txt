@@ -1,0 +1,1 @@
+ffmpeg.exe -i anim.mp4 -s 1920:1080 -aspect 16:9 -c:v vp9 -crf 33  -b:v 0 -speed 8 -cpu-used 8 -quality realtime -deadline realtime -threads 8 -c:a libopus -b:a 80k -f webm anim.webm
